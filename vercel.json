@@ -6,9 +6,10 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/lesson/:id", "destination": "/lesson/[id]" },
-    { "source": "/level/:id", "destination": "/level/[id]" },
-    { "source": "/exercise/:id", "destination": "/exercise/[id]" },
-    { "source": "/game/:id", "destination": "/game/[id]" }
+    { "source": "/lesson/:id", "destination": "/lesson/[id].html" },
+    { "source": "/level/:id", "destination": "/level/[id].html" },
+    { "source": "/exercise/:id", "destination": "/exercise/[id].html" },
+    { "source": "/game/:id", "destination": "/game/[id].html" },
+    { "source": "/((?!_expo|assets|favicon\\.ico).*)", "destination": "/index.html" }
   ]
 }

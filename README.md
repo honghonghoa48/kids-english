@@ -62,6 +62,22 @@ kids-english/
 | `expo-speech` (built-in) | Phát âm tiếng Anh | Không |
 | [dictionaryapi.dev](https://dictionaryapi.dev/) | Định nghĩa + IPA + ví dụ | Không |
 
+## Deploy lên web
+
+Repo có sẵn `vercel.json` để deploy auto qua Vercel:
+
+1. Vào https://vercel.com/new và **Import** repo `honghonghoa48/kids-english`.
+2. Vercel sẽ tự đọc `vercel.json`: build command `npx expo export -p web`, output directory `dist`.
+3. Bấm **Deploy**. Sau đó mỗi PR sẽ tự sinh 1 **Preview URL** riêng để test trên mobile browser.
+
+Build local để test trước khi deploy:
+
+```bash
+npx expo export -p web
+# → output ra thư mục dist/
+npx serve dist
+```
+
 ## Roadmap
 
 - [x] MVP: 3 levels × 3 lessons, 2 mini-games, TTS

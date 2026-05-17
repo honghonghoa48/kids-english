@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npx expo export -p web",
+  "outputDirectory": "dist",
+  "framework": null,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/lesson/:id", "destination": "/lesson/[id]" },
+    { "source": "/level/:id", "destination": "/level/[id]" },
+    { "source": "/exercise/:id", "destination": "/exercise/[id]" },
+    { "source": "/game/:id", "destination": "/game/[id]" }
+  ]
+}
